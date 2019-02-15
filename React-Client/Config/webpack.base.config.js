@@ -42,7 +42,7 @@ module.exports = env => {
         'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
       }),
       new CopyWebpackPlugin([{
-        from: 'React-Client/src/static'
+        from: 'React-Client/dist/static'
       }]),
       new MiniCssExtractPlugin({
         filename: "[name].css",
