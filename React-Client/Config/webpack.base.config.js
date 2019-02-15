@@ -34,7 +34,7 @@ module.exports = env => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './React-Client/src/index.html',
+        template: './React-Client/dist/index.html',
         filename: './index.html'
       }),
       new webpack.DefinePlugin({
