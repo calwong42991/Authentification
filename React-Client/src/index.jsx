@@ -1,6 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { Provider } from 'react-redux';
 
-import App from './App/App.jsx';
+import { store } from './_helpers';
+import { App } from './App';
 
-ReactDOM.render(<App/>, document.getElementById('app'));
+// setup fake backend
+import { configureFakeBackend } from './_helpers';
+configureFakeBackend();
+
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('app')
+);

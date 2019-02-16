@@ -19,7 +19,6 @@
   },
   "homepage": "https://github.com/calwong42991/Authentification#readme",
   "dependencies": {
-    "config": "^3.0.1",
     "history": "^4.7.2",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",

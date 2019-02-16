@@ -49,6 +49,6 @@ function mapStateToProps(state) {
   };
 }
 
-const connnectedApp = connect(mapStateToProps)(App);
+const connectedApp = connect(mapStateToProps)(App);
 
-export { connnectedApp as App };
+export { connectedApp as App };
